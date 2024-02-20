@@ -1,0 +1,114 @@
+.info {
+    width: auto;
+    h2 {
+        margin: 2rem 0 2rem 0;
+    }
+    h4 {
+        margin-bottom: 1rem;
+    }
+    .para {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        border-radius: 0.5rem;
+        margin: 3rem 0;
+        -webkit-background-image: url(images/livre70.png) !important;
+        background-image: url(images/livre70.png);
+        -webkit-background-size: cover !important;
+        background-size: cover;
+        -webkit-background-attachment: fixed !important;
+        background-attachment: fixed;
+        -webkit-background-position: center !important;
+        background-position: center;
+        @include goldshadow;
+        @include font;
+    }
+    &__container {
+        @include font;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    &__price {
+        padding: 2rem 1rem;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            
+            li {
+                display: grid;
+                place-items: center;
+                list-style: none;
+                border-right: 2px solid $fontcolor1;
+                padding: 1rem 3rem 1rem 1rem;
+            }
+        }
+        strong {
+            color: $fontcolor;
+            font-weight: 400;
+        }
+        h4 {
+            font-weight: 500;
+            margin-top: 1rem;
+
+        }
+        i {
+            @include goldshadow;
+            font-size: 20px;
+            padding: 1rem;
+            align-items: center;
+            cursor: pointer;
+            background-image: linear-gradient(to right, $colorprimary, $colorsecondary);
+            color: $fontcolor1;
+            border-radius: 50%;
+            opacity: 0.9;
+            transition: color 0.3s, transform 0.3s;
+            &:hover {
+                background-image: linear-gradient(to right, $colorsecondary, $colorprimary);
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__hour {
+        @include font;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        table {
+            @include whiteshadow;
+            width: 50%;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+        caption {
+            margin-bottom: 1rem;
+        }
+        th {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid $fontcolor;
+        }
+        td {
+            padding-top: 0.5rem;
+        }
+    }
+    strong {
+        color: $fontcolor;
+        font-weight: 400;
+    }
+    @media screen and (max-width: 992px) {
+        .info {
+            &__price {
+                padding: 1rem 0 0 0;
+                li {
+                    width: 100%;
+                    padding: 1rem 0;
+                }
+            }
+        }
+        .para {
+            margin: 1rem 0;
+        }
+                
+    }
+}
+

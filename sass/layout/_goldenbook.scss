@@ -1,0 +1,58 @@
+.goldbook {
+    width: 100%;
+    margin-bottom: 6rem;
+    form {
+        .formcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+    }
+
+    input {
+        border: 1px solid blue;
+        min-height: 35px;
+    }
+    button {
+        padding: 1.5rem 3rem;
+        border-radius: 1rem;
+        background-image: linear-gradient(to right, $colorprimary, $colorsecondary);
+        cursor: pointer;
+        border: none;
+        color: $fontcolor1;
+        margin-left: 2rem;
+        transition: color 0.3s, transform 0.3s;
+        @include whiteshadow;
+        &:hover {
+            background-image: linear-gradient(to right, $colorsecondary, $colorprimary);
+            transform: scale(1.1);
+        }
+    }
+    label {
+        margin: 0 1.5rem 0 0.5rem;
+    }
+    textarea {
+        width: 50%;
+        height: 75px;
+    }
+    #margin {
+        margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+        .formcontainer {
+            display: block;
+            justify-content: flex-start;
+        }
+        input {
+            width: 90%;
+            margin: auto;
+            margin: 1rem 0;
+        }
+        textarea {
+            width: 100%;
+            margin: 1rem 0 2rem 0;
+        }    
+    }
+}

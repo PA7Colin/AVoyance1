@@ -1,0 +1,66 @@
+.footer {
+    max-width: 100%;
+    padding: 1rem;
+    background-color: $colorprimary;
+    border-top: 1px solid $fontcolor1;
+    border-bottom: 1px solid $fontcolor1;
+    h4 {
+        margin-bottom: 2rem;
+        &::after {
+            @include underscore1;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        p {
+            @include font;
+            margin-bottom: 1rem;
+        }
+        a {
+            -webkit-text-decoration: none !important;
+            text-decoration: none;
+            color: $fontcolor;
+            @include font;
+        }
+        i {
+            font-size: 30px;
+        }
+
+    }
+    &__arrow, &__arrow i {
+        display: flex;
+        align-items: center;
+        i {
+            background-image: linear-gradient(to right, $colorprimary, $colorsecondary);
+            border: 1px solid $colorprimary;
+            padding: 1rem;
+            border-radius: 50%;
+            color: $fontcolor1;
+            @include goldshadow;
+        }
+    }
+}
+
+
+.article {
+    height: 500px;
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        background: #000012;
+        &__container {
+            display: block;
+        }
+        &__box {
+            margin-top: 3rem;
+        }
+        &__arrow a {
+            display: none;
+        }
+    }
+}
