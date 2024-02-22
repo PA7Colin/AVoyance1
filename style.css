@@ -171,10 +171,10 @@ nav a:hover {
     margin: 10px 0;
   }
 }
-.aboutme {
+.antoine {
   margin-top: 3rem;
 }
-.aboutme__container {
+.antoine__container {
   padding: 1rem 3rem 1rem 1rem;
   background-image: url(images/livre70lr.png);
   background-size: cover;
@@ -186,7 +186,7 @@ nav a:hover {
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem #a4acfc;
 }
-.aboutme__container img {
+.antoine__container img {
   height: 125px;
   width: 125px;
   border-radius: 50%;
@@ -194,7 +194,7 @@ nav a:hover {
   margin-left: -3rem;
   box-shadow: 0 0 0.5rem rgb(200, 200, 200);
 }
-.aboutme__container a {
+.antoine__container a {
   box-shadow: 0 0 0.5rem rgb(200, 200, 200);
   padding: 1rem;
   -webkit-text-decoration: none !important;
@@ -204,55 +204,55 @@ nav a:hover {
   background-image: linear-gradient(to right, #020739, #1D4AAD);
   transition: background-image 3.5s ease-in-out;
 }
-.aboutme__container a:hover {
+.antoine__container a:hover {
   background-image: linear-gradient(to right, #1D4AAD, #020739); /* Changement de couleur au survol */
 }
-.aboutme__container p {
+.antoine__container p {
   opacity: 0.9;
   font-size: 14px;
   margin-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .aboutme__container {
+  .antoine__container {
     padding: 1rem;
     display: block;
     margin: 1.5rem 0 1.5rem 0;
   }
-  .aboutme__container p {
+  .antoine__container p {
     margin-right: 0;
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
   }
-  .aboutme__container img {
+  .antoine__container img {
     display: none;
   }
-  .aboutme__btn {
+  .antoine__btn {
     display: flex;
     justify-content: center;
   }
 }
-.service {
+.aboutme {
   margin-top: 2rem;
   width: 100%;
   padding: 2rem 0rem;
 }
-.service__container {
+.aboutme__container {
   display: flex;
   align-items: center;
   margin-top: 4rem;
 }
-.service__container img {
+.aboutme__container img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-.service h3 {
+.aboutme h3 {
   text-align: center;
   margin-top: 1rem;
 }
-.service h3::after {
+.aboutme h3::after {
   content: "";
   display: block;
   width: 100%;
@@ -343,6 +343,7 @@ nav a:hover {
 .info__hour table {
   box-shadow: 0 0 0.5rem rgb(200, 200, 200);
   width: 50%;
+  margin: auto;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -401,7 +402,7 @@ nav a:hover {
 }
 .goldbook button:hover {
   background-image: linear-gradient(to right, #1D4AAD, #020739);
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .goldbook label {
   margin: 0 1.5rem 0 0.5rem;
@@ -418,6 +419,10 @@ nav a:hover {
     display: block;
     justify-content: flex-start;
   }
+  .goldbook .formcontainer button {
+    width: 100%;
+    margin-left: 0;
+  }
   .goldbook input {
     width: 90%;
     margin: auto;
@@ -425,7 +430,7 @@ nav a:hover {
   }
   .goldbook textarea {
     width: 100%;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 3rem 0;
   }
 }
 
