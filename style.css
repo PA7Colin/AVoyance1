@@ -287,6 +287,10 @@ nav a:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
+.info .para strong {
+  color: #a67c00;
+  font-weight: 400;
+}
 .info__container {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -309,9 +313,9 @@ nav a:hover {
   border-right: 2px solid #D3B973;
   padding: 1rem 3rem 1rem 1rem;
 }
-.info__price strong {
+.info__price ul li strong {
   color: #a67c00;
-  font-weight: 400;
+  font-weight: 500;
 }
 .info__price h4 {
   font-weight: 500;
@@ -336,30 +340,49 @@ nav a:hover {
 .info__hour {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  padding: 2rem 1rem;
+  box-shadow: 0 0 0.5rem #D3B973;
+  -webkit-background-image: url(images/bgplanet.jpg) !important;
+  background-image: url(images/bgplanet.jpg);
+  -webkit-background-size: cover !important;
+  background-size: cover;
+  -webkit-background-attachment: fixed !important;
+  background-attachment: fixed;
+  -webkit-background-position: center !important;
+  background-position: center;
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  width: 50%;
+  margin: auto;
+}
+.info__hour li {
   display: flex;
   justify-content: center;
 }
-.info__hour table {
-  box-shadow: 0 0 0.5rem rgb(200, 200, 200);
-  width: 50%;
-  margin: auto;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-.info__hour caption {
-  margin-bottom: 1rem;
-}
-.info__hour th {
+.info__hour h3 {
+  font-weight: 300;
   padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: #a67c00;
   border-bottom: 2px solid #a67c00;
 }
-.info__hour td {
-  padding-top: 0.5rem;
+.info__hour p {
+  margin-bottom: 1rem;
 }
-.info strong {
+.info__hour strong {
   color: #a67c00;
-  font-weight: 400;
+}
+.info__hour i {
+  box-shadow: 0 0 0.5rem #D3B973;
+  position: absolute;
+  left: -25px;
+  font-size: 25px;
+  color: #a67c00;
+  padding: 1rem;
+  rotate: -25deg;
+  border-radius: 50%;
+  background-color: #020739;
 }
 @media screen and (max-width: 992px) {
   .info .info__price {
@@ -368,6 +391,11 @@ nav a:hover {
   .info .info__price li {
     width: 100%;
     padding: 1rem 0;
+  }
+  .info .info__hour {
+    width: 75%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .info .para {
     margin: 1rem 0;

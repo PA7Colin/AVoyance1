@@ -7,6 +7,10 @@
         margin-bottom: 1rem;
     }
     .para {
+        strong {
+            color: $fontcolor;
+            font-weight: 400;
+        }
         text-align: center;
         padding: 1.5rem 1rem;
         border-radius: 0.5rem;
@@ -41,11 +45,11 @@
                 list-style: none;
                 border-right: 2px solid $fontcolor1;
                 padding: 1rem 3rem 1rem 1rem;
+                strong {
+                    color: $fontcolor;
+                    font-weight: 500;
+                }
             }
-        }
-        strong {
-            color: $fontcolor;
-            font-weight: 400;
         }
         h4 {
             font-weight: 500;
@@ -71,31 +75,51 @@
     }
     &__hour {
         @include font;
-        padding: 2rem 1rem;
-        display: flex;
-        justify-content: center;
-        table {
-            @include whiteshadow;
-            width: 50%;
-            margin: auto;
-            border-radius: 1rem;
-            padding: 1rem;
+        @include goldshadow;
+        -webkit-background-image: url(images/bgplanet.jpg) !important;
+        background-image: url(images/bgplanet.jpg);
+        -webkit-background-size: cover !important;
+        background-size: cover;
+        -webkit-background-attachment: fixed !important;
+        background-attachment: fixed;
+        -webkit-background-position: center !important;
+        background-position: center;
+        position: relative;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        width: 50%;
+        margin: auto;
+        li {
+            display: flex;
+            justify-content: center;
         }
-        caption {
-            margin-bottom: 1rem;
-        }
-        th {
+        h3 {
+            font-weight: 300;
             padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            color: $fontcolor;
             border-bottom: 2px solid $fontcolor;
         }
-        td {
-            padding-top: 0.5rem;
+        p {
+            margin-bottom: 1rem;
+        }
+        strong {
+            color: $fontcolor;
+        }
+        i {
+            @include goldshadow;
+            position: absolute;
+            left: -25px;
+            font-size: 25px;
+            color: $fontcolor;
+            padding: 1rem;
+            rotate: -25deg;
+            border-radius: 50%;
+            background-color: $colorprimary;
         }
     }
-    strong {
-        color: $fontcolor;
-        font-weight: 400;
-    }
+    
     @media screen and (max-width: 992px) {
         .info {
             &__price {
@@ -104,6 +128,11 @@
                     width: 100%;
                     padding: 1rem 0;
                 }
+            }
+            &__hour {
+                width: 75%;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
             }
         }
         .para {
