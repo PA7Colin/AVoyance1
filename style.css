@@ -341,14 +341,6 @@ nav a:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   box-shadow: 0 0 0.5rem #D3B973;
-  -webkit-background-image: url(images/bgplanet.jpg) !important;
-  background-image: url(images/bgplanet.jpg);
-  -webkit-background-size: cover !important;
-  background-size: cover;
-  -webkit-background-attachment: fixed !important;
-  background-attachment: fixed;
-  -webkit-background-position: center !important;
-  background-position: center;
   position: relative;
   padding: 1rem;
   text-align: center;
