@@ -10,6 +10,9 @@ const swiper = new Swiper('.swiper', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+    },
   });
 // SwiperJS Livre D'or
 const swiper1 = new Swiper('.swiper1', {

@@ -1,5 +1,5 @@
 .swiper {
-    height: 300px;
+    height: 350px;
     .swiper-slide {
         width: 300px  !important;
         height: 300px;
@@ -13,6 +13,9 @@
             text-align: center;
         }
     }
+}
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: $fontcolor1;
 }
 
 .swiper1 {
