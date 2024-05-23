@@ -97,7 +97,7 @@ h2::after {
 
 @media screen and (max-width: 768px) {
   .swiper1 {
-    height: 300px;
+    height: 350px;
     margin-top: 3rem;
   }
 }
@@ -477,6 +477,9 @@ nav a:hover {
   .goldbook textarea {
     width: 100%;
     margin: 1rem 0 3rem 0;
+  }
+  .goldbook #start {
+    width: 90% !important;
   }
 }
 
