@@ -67,7 +67,7 @@ h2::after {
 }
 
 .swiper1 {
-  width: 50%;
+  width: 55%;
   margin: auto;
   height: 200px;
   font-family: "Montserrat", sans-serif;
@@ -77,7 +77,7 @@ h2::after {
   border: 1px solid transparent;
 }
 .swiper1 .swiper-slide {
-  box-shadow: 0 0 0.5rem #D3B973;
+  box-shadow: 0 0 0.1rem #D3B973;
   background-image: url(images/livre.jpg);
   background-size: cover;
   background-position: center;
