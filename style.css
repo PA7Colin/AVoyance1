@@ -36,9 +36,18 @@ h2::after {
   margin-top: 15px;
 }
 
+.swiper {
+  height: 640px;
+}
+.swiper .flexcard {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
 .swiper .swiper-slide {
   width: 300px !important;
-  background-image: url(images/carte2.png);
+  height: 590px;
+  background-image: url(images/carte5.png);
   background-size: cover;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem #a4acfc;
@@ -47,6 +56,10 @@ h2::after {
   padding: 0.5rem 1rem;
   font-size: 16px;
   text-align: center;
+}
+.swiper a, .swiper strong {
+  color: #a67c00;
+  text-decoration: none;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
