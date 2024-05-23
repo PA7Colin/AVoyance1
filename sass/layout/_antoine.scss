@@ -1,5 +1,8 @@
 .antoine {
     margin-top: 3rem;
+    h2 {
+        display: none;
+    }
     &__container {
         padding: 1rem 3rem 1rem 1rem;
         background-image: url(images/livre70lr.png);
