@@ -47,7 +47,7 @@ h2::after {
 .swiper .swiper-slide {
   width: 300px !important;
   height: 590px;
-  background-image: url(images/carte5.png);
+  background-image: url(images/carte15.png);
   background-size: cover;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem #a4acfc;
@@ -88,11 +88,8 @@ h2::after {
 .swiper1__name {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin: 1.5rem 0 2.5rem 0;
-}
-.swiper1__name strong {
-  margin-right: 1rem;
+  gap: 1rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,6 +99,12 @@ h2::after {
   }
   .swiper1__name {
     margin: 1.5rem 0 1.5rem 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .swiper1 {
+    height: 425px;
+    margin-top: 3rem;
   }
 }
 .h1 {
@@ -484,6 +487,11 @@ nav a:hover {
   .goldbook #start {
     width: 90% !important;
   }
+}
+.goldbook .more {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 14px;
 }
 
 .footer {
