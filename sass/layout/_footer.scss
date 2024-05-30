@@ -1,7 +1,7 @@
 .footer {
     max-width: 100%;
     padding: 1rem;
-    background-color: $colorprimary;
+    background-color: $colortertiary;
     border-top: 1px solid $fontcolor1;
     border-bottom: 1px solid $fontcolor1;
     h4 {
@@ -39,6 +39,15 @@
             border-radius: 50%;
             color: $fontcolor1;
             @include goldshadow;
+        }
+    }
+    &__cgu {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 14px;
+        a {
+            text-decoration: none;
+            color: $fontcolor;
         }
     }
 }

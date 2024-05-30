@@ -14,7 +14,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
     },
   });
-// SwiperJS Livre D'or
 const swiper1 = new Swiper('.swiper1', {
   effect: 'cards',
   perSlideOffset: 8,

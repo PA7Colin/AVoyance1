@@ -7,7 +7,8 @@
 
 body {
   font-family: "Cinzel", serif;
-  background-image: url(images/background.jpg);
+  background-image: none;
+  background-color: #050426;
   background-size: cover;
   color: #D3B973;
 }
@@ -114,6 +115,10 @@ h2::after {
   text-align: center;
   padding: 1rem 0 1rem 0;
   box-shadow: 0 0 0.5rem #D3B973;
+}
+.h1 a {
+  text-decoration: none;
+  color: #D3B973;
 }
 
 .title {
@@ -264,6 +269,11 @@ nav a:hover {
     justify-content: center;
   }
 }
+@media screen and (min-width: 992px) {
+  .antoine__container {
+    background-image: none;
+  }
+}
 .aboutme {
   margin-top: 2rem;
   width: 100%;
@@ -283,14 +293,14 @@ nav a:hover {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-}
-.aboutme h3::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  background-color: #D3B973;
-  margin-top: 8px;
+  /*&::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      background-color:$fontcolor1;
+      margin-top: 8px;
+  } */
 }
 
 .info {
@@ -496,7 +506,7 @@ nav a:hover {
 .footer {
   max-width: 100%;
   padding: 1rem;
-  background-color: #020739;
+  background-color: #050426;
   border-top: 1px solid #D3B973;
   border-bottom: 1px solid #D3B973;
 }
@@ -542,6 +552,15 @@ nav a:hover {
   border-radius: 50%;
   color: #D3B973;
   box-shadow: 0 0 0.5rem #D3B973;
+}
+.footer__cgu {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+}
+.footer__cgu a {
+  text-decoration: none;
+  color: #a67c00;
 }
 
 .article {
